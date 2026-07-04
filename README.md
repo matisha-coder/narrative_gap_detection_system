@@ -1,23 +1,22 @@
-Narrative Gap Detection System
+## 📂 Repository Structure
 
-An automated, multi-stream data ingestion engine engineered to extract, clean, and unify structured organization payloads from separate digital environments. The pipeline splits ingestion into tracking internal company web copies (Internal Reality) and founder/company market messaging (External Perception) to construct a consolidated data model for downstream calculation modules.
+The system isolates components cleanly across specialized logical directories to maintain a scalable ingestion architecture:
 
-Project Architecture
-
+```text
 narrative-gap-detection-system/
 │
 ├── scrapers/
-│   ├── __init__.py
-│   ├── website_crawler.py       # Requests/BeautifulSoup4 internal crawler
-│   └── linkedin_scraper.py      # Playwright browser-stealth external scraper
+│   ├── __init__.py          # Packages ingestion modules for clean imports
+│   ├── website_crawler.py   # Internal Reality crawling engine (BS4)
+│   └── linkedin_scraper.py  # External Perception stealth scraper (Playwright)
 │
 ├── pipeline/
-│   ├── __init__.py
-│   └── stream_merger.py         # Data unification and schema mapping layer
+│   ├── __init__.py          # Exposes core pipeline utilities
+│   └── stream_merger.py     # Multi-stream data unification layer
 │
-├── data/                        # Local directory for JSON caches (Git ignored)
+├── data/                    # Local JSON data cache directory (Git Ignored)
 │   └── .gitkeep
 │
-├── .gitignore
-├── README.md
-└── requirements.txt
+├── .gitignore               # Prevents tracking cache data and local credentials
+├── README.md                # System documentation and deployment guide
+└── requirements.txt         # Production dependency manifest
