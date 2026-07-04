@@ -7,17 +7,25 @@ Project Architecture
 narrative-gap-detection-system/
 │
 ├── scrapers/
+
+
 │   ├── __init__.py
 │   ├── website_crawler.py       # Requests/BeautifulSoup4 internal crawler
 │   └── linkedin_scraper.py      # Playwright browser-stealth external scraper
 │
+
+
 ├── pipeline/
 │   ├── __init__.py
 │   └── stream_merger.py         # Data unification and schema mapping layer
 │
+
+
 ├── data/                        # Local directory for JSON caches (Git ignored)
 │   └── .gitkeep
 │
+
+
 ├── .gitignore
 ├── README.md
 └── requirements.txt
