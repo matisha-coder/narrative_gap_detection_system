@@ -35,13 +35,22 @@ narrative-gap-detection-system/
 ├── README.md                # System documentation and deployment guide
 └── requirements.txt         # Production dependency manifest
 
+---
 
 ## 🚀 Deployment & Execution Guide
 
 ### 1. Environment Initialization
 Clone the repository and install the framework dependencies:
-```bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/narrative-gap-detection-system.git](https://github.com/YOUR_GITHUB_USERNAME/narrative-gap-detection-system.git)
-cd narrative-gap-detection-system
+```text
+git clone [https://github.com/YOUR_GITHUB_USERNAME/narrative-gap-detection-system.git]
+cd narrative_gap_detection_system
 pip install -r requirements.txt
 playwright install chromium
+
+
+### 2. Operating the Pipeline
+
+#### Step A: Extract External Market Perception
+Run the automated browser session locally to crawl authenticated public profiles and timelines safely:
+```text
+python scrapers/linkedin_scraper.py
