@@ -46,9 +46,9 @@ git clone [https://github.com/YOUR_GITHUB_USERNAME/narrative-gap-detection-syste
 cd narrative_gap_detection_system
 pip install -r requirements.txt
 playwright install chromium
+---
 
-
-### 2. Operating the Pipeline
+## 2. Operating the Pipeline
 
 #### Step A: Extract External Market Perception
 Run the automated browser session locally to crawl authenticated public profiles and timelines safely:
