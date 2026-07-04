@@ -1,0 +1,18 @@
+# Ignore raw scraped data payloads and unified metrics
+*.json
+website_data.json
+linkedin_data_hand_off.json
+master_narrative_data.json
+
+# Ignore local browser profiles and stealth browser data
+user_data/
+.playwright/
+.pytest_cache/
+
+# Ignore Python runtime files and development caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.env
